@@ -1,17 +1,15 @@
-package com.expo.bookingservice;
+package com.expo.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.expo.bookingservice.controller")
-public class BookingServiceApplication {
+public class ApiGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BookingServiceApplication.class, args);
+        SpringApplication.run(ApiGatewayApplication.class, args);
     }
 
 }

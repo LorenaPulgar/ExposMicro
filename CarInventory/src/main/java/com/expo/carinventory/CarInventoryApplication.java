@@ -1,4 +1,4 @@
-package com.expo.bookingservice;
+package com.expo.carinventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,11 +7,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.expo.bookingservice.controller")
-public class BookingServiceApplication {
+@EnableFeignClients
+public class CarInventoryApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BookingServiceApplication.class, args);
+        SpringApplication.run(CarInventoryApplication.class, args);
     }
 
 }
